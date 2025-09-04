@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: Author: MickLesk
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/pipehnz/ProxmoxVE/raw/main/LICENSE
 
 function header_info() {
   clear
@@ -27,7 +27,7 @@ INFO="${BL}ℹ️${CL}"
 
 APP="FileBrowser Quantum"
 INSTALL_PATH="/usr/local/bin/filebrowser"
-CONFIG_PATH="/usr/local/community-scripts/fq-config.yaml"
+CONFIG_PATH="/usr/local/pipehnz/fq-config.yaml"
 DEFAULT_PORT=8080
 SRC_DIR="/"
 
@@ -69,7 +69,7 @@ function msg_error() {
 }
 
 # Detect legacy FileBrowser installation
-LEGACY_DB="/usr/local/community-scripts/filebrowser.db"
+LEGACY_DB="/usr/local/pipehnz/filebrowser.db"
 LEGACY_BIN="/usr/local/bin/filebrowser"
 LEGACY_SERVICE_DEB="/etc/systemd/system/filebrowser.service"
 LEGACY_SERVICE_ALP="/etc/init.d/filebrowser"
@@ -235,7 +235,7 @@ command="/usr/local/bin/filebrowser"
 command_args="-c $CONFIG_PATH"
 command_background=true
 directory="/usr/local/community-scripts"
-pidfile="/usr/local/community-scripts/pidfile"
+pidfile="/usr/local/pipehnz/pidfile"
 
 depend() {
     need net
